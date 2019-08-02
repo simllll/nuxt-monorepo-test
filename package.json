@@ -1,0 +1,13 @@
+{
+	"name": "root",
+	"private": true,
+	"scripts": {
+		"bootstrap": "lerna bootstrap --hoist",
+		"clean": "lerna run clean && rm -fR node_modules packages/*/node_modules && rm package-lock.json",
+		"start": "cd packages/nuxt-demo-1 && npm run dev"
+	},
+	"devDependencies": {
+		"lerna": "^3.16.4",
+		"eslint-import-resolver-webpack": "^0.11.1"
+	}
+}
